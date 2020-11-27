@@ -36,11 +36,6 @@
 #define __NO_USB_LIB_C
 #include "usb_config.c"
 
-#define USB_ISTR_W0C_MASK   (ISTR_PMAOVR | ISTR_ERR | ISTR_WKUP | ISTR_SUSP | ISTR_RESET | ISTR_SOF | ISTR_ESOF)
-#define VAL_MASK            0xFFFF
-#define VAL_SHIFT           16 
-#define EP_NUM_MASK         0xFFFF
-#define EP_NUM_SHIFT        0
 
 #define USB_DBL_BUF_EP      0x0000
 #define USB_DEVICE     ((USB_OTG_DeviceTypeDef *)(USB_OTG_HS_PERIPH_BASE + USB_OTG_DEVICE_BASE))
